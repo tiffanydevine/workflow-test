@@ -9,7 +9,7 @@ describe('CommentBox', () => {
   });
 
   it('has correct class', () => {
-    expect(component).to.have.class('comment-box');
+    expect(component).to.have.class('comment-box-container');
   });
 
   it('has a text area', () => {
@@ -30,7 +30,7 @@ describe('CommentBox', () => {
     });
 
     it('when submitted clears input', () => {
-      component.simulate('submit');
+      component.find('form').simulate('submit');
       expect(component.find('textarea')).to.have.value('');
     });
   });
