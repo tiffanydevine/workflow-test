@@ -2,7 +2,7 @@
 
 .comment-box {
   display: flex;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .common-btn {
@@ -47,4 +47,9 @@
   border: 3px solid #cccccc;
   padding: 5px;
   margin-right: 10px;
+}
+
+.head-tertiary {
+  font-weight: lighter;
+  margin-top: 30px;
 }
