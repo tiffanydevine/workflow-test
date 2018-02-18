@@ -1,14 +1,14 @@
-import { renderComponent , expect } from '../test_helper';
+import { renderComponent, expect } from '../test_helper';
 import App from '../../src/components/app';
 
-describe('App' , () => {
-  let component;
+// use describe to group similar tests
+describe('App', () => {
+  //use it to test a single attribute of a target (one specific test)
+  it('shows the correct test', () => {
+    //create instance of App
+    const component = renderComponent(App);
 
-  beforeEach(() => {
-    component = renderComponent(App);
-  });
-
-  it('renders something', () => {
-    expect(component).to.exist;
+    //expect to make an assertion about a target
+    expect(component).to.contain('React simple starter');
   });
 });
