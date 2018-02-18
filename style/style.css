@@ -1,18 +1,37 @@
+/*btn style*/
+
 .common-btn {
   font-family: 'Lato';
   white-space: nowrap;
   display: inline-block;
-  height: 4rem;
-  line-height: 4rem;
-  padding: 0 1.4rem;
-  box-shadow: 0 0.4rem 0.6rem rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   background: #fff;
   border-radius: 4px;
-  font-size: 1.5rem;
+  font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.25px;
   color: #6772e5;
   text-decoration: none;
   transition: all 0.15s ease;
+}
+
+.common-btn:hover {
+  color: #7795f8;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.common-btn:active {
+  color: #555abf;
+  background-color: #f6f9fc;
+  transform: translateY(1px);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.common-btn:focus {
+  outline: none;
 }
