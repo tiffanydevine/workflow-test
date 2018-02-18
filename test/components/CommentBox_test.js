@@ -3,7 +3,13 @@ import App from '../../src/components/CommentBox';
 
 describe('CommentBox', () => {
   //use it to test a single attribute of a target (one specific test)
-  it('', () => {
+  it('has a text area', () => {
+    const component = renderComponent(CommentBox);
+
+    expect(component.find('text-area')).to.exist;
+  });
+
+  it('has a button', () => {
     //create instance of App
     const component = renderComponent(App);
 
@@ -11,4 +17,3 @@ describe('CommentBox', () => {
     expect;
   });
 });
-
